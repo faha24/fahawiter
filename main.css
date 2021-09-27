@@ -3,7 +3,71 @@
     margin: 0;
     box-sizing: border-box;
 }
-#header{
+.html{
+    font-size: 62.5%;
+}
+#Slider{
+    background: #222;
+}
+#Slider .heading{
+    font-size: 3rem;
+    padding: 2rem 0;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0 .5rem 1rem #000;
+    color: white;
+
+}
+#Slider .music_slider{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+#Slider .music_slider .box{
+    height: 16rem;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    border-radius: 1rem;
+    box-shadow: 0 .5rem 1rem #000;
+    overflow: hidden;
+    margin: 2rem;
+}
+#Slider .music_slider .box .image{
+    height: 100%;
+    width: 25%;
+}
+#Slider .music_slider .box .image img{
+    height: 100%;
+    width: 100%;
+}
+#Slider .music_slider .box .music{
+    width: 75%;
+}
+#Slider .music_slider .box .music audio{
+    width: 100%;
+    outline: none;
+}
+#Slider .music_slider .box .music audio::-webkit-media-controls-enclosure{
+    background: none;
+}
+@media(max-width:600px){
+    #Slider .music_slider .box{
+        height: 27rem;
+        width: 90%;
+        flex-flow: column;
+    }
+    #Slider .music_slider .box .image{
+        height: 80%;
+        width: 100%;
+    }
+
+    
+}
+
+
+/* #header{
     width: 100%;
     height:42px;
     background-color: black;
@@ -32,16 +96,52 @@
     color: #fff;
     margin-top: 12px;
 }
-#content{
-
+#slider{
+    position: relative;
 }
-.tuyet_roi img{
+
+.tuyetroi img{
     background-size: 100%;
     width: 100%;
 }
-.music{
+#content{
+
+} */
+ /* audio:hover, audio:focus, audio:active
+{
+-webkit-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+-moz-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+-webkit-transform: scale(1.05);
+-moz-transform: scale(1.05);
+transform: scale(1.05);
+} */
+audio
+{
+-webkit-transition:all 0.5s linear;
+-moz-transition:all 0.5s linear;
+-o-transition:all 0.5s linear;
+transition:all 0.5s linear;
+-moz-box-shadow: 2px 2px 4px 0px #006773;
+-webkit-box-shadow:  2px 2px 4px 0px #006773;
+box-shadow: 2px 2px 4px 0px #006773;
+-moz-border-radius:7px 7px 7px 7px ;
+-webkit-border-radius:7px 7px 7px 7px ;
+border-radius:7px 7px 7px 7px ;
+} 
+/* .music{
     width: 100%;
+    position: absolute;
+    text-align: center;
+    background: url(./img/hinh-anh-gif-khu-rung-tuyet-roi-dem-trang_053437398.gif);
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+.center{
+    margin: 25%;
+} */
 
 
 
